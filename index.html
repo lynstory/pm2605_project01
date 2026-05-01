@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add("reveal-js");</script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="top-header__inner">
+            <a class="logo" href="index.html">로고1</a>
+            <nav aria-label="메인 메뉴">
+                <ul class="main-menu">
+                    <li><a href="sub01.html">회사소개</a></li>
+                    <li><a href="sub02.html">제품소개</a></li>
+                    <li><a href="sub03.html">온라인문의</a></li>
+                    <li><a href="sub04.html">게시판</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="모바일 메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <button class="drawer-close-btn" id="drawerCloseBtn" type="button" aria-label="모바일 메뉴 닫기">&times;</button>
+        </div>
+        <nav aria-label="모바일 메뉴">
+            <ul class="drawer-menu">
+                <li><a href="sub01.html">회사소개</a></li>
+                <li><a href="sub02.html">제품소개</a></li>
+                <li><a href="sub03.html">온라인문의</a></li>
+                <li><a href="sub04.html">게시판</a></li>
+            </ul>
+        </nav>
+    </aside>
+        
+    <div class="visual">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-bg-01">
+            <div class="slide-caption">
+                <p>ABOUT US</p>
+                <h2>회사소개</h2>
+            </div>
+          </div>
+          <div class="swiper-slide slide-bg-02">
+            <div class="slide-caption">
+                <p>OUR PRODUCT</p>
+                <h2>제품소개</h2>
+            </div>
+          </div>
+          <div class="swiper-slide slide-bg-03">
+            <div class="slide-caption">
+                <p>CONTACT</p>
+                <h2>온라인문의</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    
+    <main class="main-content">
+        <section class="philosophy-section" id="philosophySection" aria-label="경영 철학">
+            <div class="philosophy-inner">
+                <p class="philosophy-kicker">동원, 세상을 향한 여정</p>
+                <h2 class="philosophy-title">세상의 필요를 가장 먼저 찾아냅니다.<br>최적의 답을 가장 먼저 제시합니다.</h2>
+                <a class="philosophy-btn" href="sub01.html">경영철학 보기</a>
+                <div class="philosophy-media">
+                    <p>회사 홍보영상</p>
+                    <div class="philosophy-video-wrap">
+                        <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="회사 홍보 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-scroll-section" id="visionScrollSection">
+            <div class="vision-sticky-frame">
+                <div class="vision-panel vision-panel--aurora" id="visionPanelAurora">
+                    <div class="vision-aurora-layout">
+                        <div class="vision-aurora-visual">
+                            <img src="img/vision-aurora.png" alt="오로라가 펼쳐진 밤하늘">
+                        </div>
+                        <p class="vision-aurora-tagline">지속가능에 답하다</p>
+                    </div>
+                </div>
+                <div class="vision-panel vision-panel--metrics" id="visionPanelMetrics">
+                    <div class="vision-metrics-layout">
+                        <div class="metrics-image-col">
+                            <img src="img/vision-bubble.png" alt="비전 이미지를 상징하는 오브젝트">
+                        </div>
+                        <div class="metrics-data-col">
+                            <div class="metrics-row metrics-row--top">
+                                <p class="metrics-value">+30%</p>
+                                <p class="metrics-label">배당성향 확대 계획</p>
+                            </div>
+                            <div class="metrics-row metrics-row--bottom">
+                                <p class="metrics-value">-40%</p>
+                                <p class="metrics-label">탄소 배출 저감 계획</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <section class="footer-company">
+                <a class="footer-logo" href="index.html">로고</a>
+                <p>홈페이지코리아</p>
+                <p>대표: 홍길동 | 사업자등록번호: 107-88-55192</p>
+                <p>주소: 서울특별시 영등포구 경인로 775 에이스하이테크시티 2동 202호</p>
+                <p>문의: sales@homepagekorea.com</p>
+                <p class="footer-copy">© 2026 HOMEPAGEKOREA. ALL RIGHTS RESERVED.</p>
+            </section>
+
+            <nav class="footer-nav" aria-label="푸터 메뉴">
+                <div class="footer-column">
+                    <h3>회사소개</h3>
+                    <ul>
+                        <li><a href="sub01.html">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>제품소개</h3>
+                    <ul>
+                        <li><a href="sub02.html">대표 제품</a></li>
+                        <li><a href="#">기능 안내</a></li>
+                        <li><a href="#">도입 사례</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>온라인문의</h3>
+                    <ul>
+                        <li><a href="sub03.html">문의 접수</a></li>
+                        <li><a href="#">견적 요청</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>게시판</h3>
+                    <ul>
+                        <li><a href="sub04.html">공지사항</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

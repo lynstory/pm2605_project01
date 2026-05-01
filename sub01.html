@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="top-header__inner">
+            <a class="logo" href="index.html">로고</a>
+            <nav aria-label="메인 메뉴">
+                <ul class="main-menu">
+                    <li><a href="sub01.html" aria-current="page">회사소개</a></li>
+                    <li><a href="sub02.html">제품소개</a></li>
+                    <li><a href="sub03.html">온라인문의</a></li>
+                    <li><a href="sub04.html">게시판</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="모바일 메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <button class="drawer-close-btn" id="drawerCloseBtn" type="button" aria-label="모바일 메뉴 닫기">&times;</button>
+        </div>
+        <nav aria-label="모바일 메뉴">
+            <ul class="drawer-menu">
+                <li><a href="sub01.html">회사소개</a></li>
+                <li><a href="sub02.html">제품소개</a></li>
+                <li><a href="sub03.html">온라인문의</a></li>
+                <li><a href="sub04.html">게시판</a></li>
+            </ul>
+        </nav>
+    </aside>
+        
+    <div class="subVisual" aria-label="서브 비주얼">
+        <div class="subVisual__inner">
+            <h1 class="subVisual__title">회사소개</h1>
+            <div class="subVisual__path" aria-label="현재 위치">
+                <a href="index.html">홈</a>
+                <span aria-hidden="true">/</span>
+                <span>회사소개</span>
+            </div>
+        </div>
+    </div>
+    <main class="main-content main-content--sub">
+        <section class="company-intro" aria-labelledby="companyIntroHeading" style="display: flex; gap: 40px; align-items: center;">
+            <div class="company-intro__media" style="flex: 1;">
+                <img src="img/sub01_intro.png" width="600" height="300" style="width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;" alt="삼양미디어 회사소개 대표 이미지">
+            </div>
+            <div class="company-intro__body" style="flex: 2;">
+                <h2 id="companyIntroHeading" class="company-intro__title">
+                    삼양미디어는 <span class="company-intro__accent">교과서의 새로운 기준</span>을 만들어가겠습니다.
+                </h2>
+                <p class="company-intro__lead">IT도서를 비롯하여 여러 분야로부터 시작된 풍부한 경험을 가지고 있습니다.</p>
+                <p class="company-intro__paragraph">
+                    초등에서부터 중등, 고등학교(인문계, 특성화계) 각종 교과서와 선생님들의 효율적인 수업을 위한 지도서 및 교육에 필요한 학습자료 그리고 각종 도서를 출간하고 있습니다.
+                </p>
+                <p class="company-intro__paragraph">
+                    변화하는 기업 신뢰받는 기업의 창립이념은 교육 일선에 계시는 모든 선생님과 학생들을 비롯하여 일반 독자 고객들과 함께 삼양미디어는 늘 새롭게 나가겠습니다.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <section class="footer-company">
+                <a class="footer-logo" href="index.html">로고</a>
+                <p>홈페이지코리아</p>
+                <p>대표: 홍길동 | 사업자등록번호: 107-88-55192</p>
+                <p>주소: 서울특별시 영등포구 경인로 775 에이스하이테크시티 2동 202호</p>
+                <p>문의: sales@homepagekorea.com</p>
+                <p class="footer-copy">© 2026 HOMEPAGEKOREA. ALL RIGHTS RESERVED.</p>
+            </section>
+
+            <nav class="footer-nav" aria-label="푸터 메뉴">
+                <div class="footer-column">
+                    <h3>회사소개</h3>
+                    <ul>
+                        <li><a href="sub01.html">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>제품소개</h3>
+                    <ul>
+                        <li><a href="sub02.html">대표 제품</a></li>
+                        <li><a href="#">기능 안내</a></li>
+                        <li><a href="#">도입 사례</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>온라인문의</h3>
+                    <ul>
+                        <li><a href="sub03.html">문의 접수</a></li>
+                        <li><a href="#">견적 요청</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>게시판</h3>
+                    <ul>
+                        <li><a href="sub04.html">공지사항</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>게시판</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="top-header__inner">
+
+            <a class="logo" href="index.html">로고</a>
+
+            <nav aria-label="메인 메뉴">
+
+                <ul class="main-menu">
+
+                    <li><a href="sub01.html">회사소개</a></li>
+
+                    <li><a href="sub02.html">제품소개</a></li>
+
+                    <li><a href="sub03.html">온라인문의</a></li>
+
+                    <li><a href="sub04.html" aria-current="page">게시판</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="모바일 메뉴 열기">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+
+        <div class="drawer-header">
+
+            <button class="drawer-close-btn" id="drawerCloseBtn" type="button" aria-label="모바일 메뉴 닫기">&times;</button>
+
+        </div>
+
+        <nav aria-label="모바일 메뉴">
+
+            <ul class="drawer-menu">
+
+                <li><a href="sub01.html">회사소개</a></li>
+
+                <li><a href="sub02.html">제품소개</a></li>
+
+                <li><a href="sub03.html">온라인문의</a></li>
+
+                <li><a href="sub04.html">게시판</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+
+    <div class="subVisual" aria-label="서브 비주얼">
+
+        <div class="subVisual__inner">
+
+            <h1 class="subVisual__title">게시판</h1>
+
+            <div class="subVisual__path" aria-label="현재 위치">
+
+                <a href="index.html">홈</a>
+
+                <span aria-hidden="true">/</span>
+
+                <span>게시판</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <main class="main-content main-content--sub">
+
+        <section class="board-wrap" aria-labelledby="boardHeading">
+
+            <div class="board-head">
+
+                <h2 id="boardHeading">공지사항</h2>
+
+                <p>사이트 이용 및 서비스 안내 관련 공지입니다.</p>
+
+            </div>
+
+            <div class="board-table-wrap">
+
+                <table class="board-table">
+
+                    <caption class="visually-hidden">공지사항 목록</caption>
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col" class="col-num">번호</th>
+
+                            <th scope="col">제목</th>
+
+                            <th scope="col" class="col-date">작성일</th>
+
+                            <th scope="col" class="col-hit">조회</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="board-notice">
+
+                            <td class="col-num">공지</td>
+
+                            <td class="title-cell"><a href="#">2026년 상반기 시스템 점검 안내</a></td>
+
+                            <td class="col-date">2026-04-01</td>
+
+                            <td class="col-hit">428</td>
+
+                        </tr>
+
+                        <tr class="board-notice">
+
+                            <td class="col-num">공지</td>
+
+                            <td class="title-cell"><a href="#">개인정보처리방침 개정 안내</a></td>
+
+                            <td class="col-date">2026-03-18</td>
+
+                            <td class="col-hit">312</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="col-num">12</td>
+
+                            <td class="title-cell"><a href="#">신규 교사용 자료실 오픈</a></td>
+
+                            <td class="col-date">2026-04-28</td>
+
+                            <td class="col-hit">156</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="col-num">11</td>
+
+                            <td class="title-cell"><a href="#">웹사이트 메뉴 개편 안내</a></td>
+
+                            <td class="col-date">2026-04-22</td>
+
+                            <td class="col-hit">203</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="col-num">10</td>
+
+                            <td class="title-cell"><a href="#">자료 다운로드 오류 임시 조치 완료</a></td>
+
+                            <td class="col-date">2026-04-15</td>
+
+                            <td class="col-hit">98</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <div class="site-footer__inner">
+
+            <section class="footer-company">
+
+                <a class="footer-logo" href="index.html">로고</a>
+
+                <p>홈페이지코리아</p>
+
+                <p>대표: 홍길동 | 사업자등록번호: 107-88-55192</p>
+
+                <p>주소: 서울특별시 영등포구 경인로 775 에이스하이테크시티 2동 202호</p>
+
+                <p>문의: sales@homepagekorea.com</p>
+
+                <p class="footer-copy">© 2026 HOMEPAGEKOREA. ALL RIGHTS RESERVED.</p>
+
+            </section>
+
+
+
+            <nav class="footer-nav" aria-label="푸터 메뉴">
+
+                <div class="footer-column">
+
+                    <h3>회사소개</h3>
+
+                    <ul>
+
+                        <li><a href="sub01.html">인사말</a></li>
+
+                        <li><a href="#">연혁</a></li>
+
+                        <li><a href="#">오시는 길</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>제품소개</h3>
+
+                    <ul>
+
+                        <li><a href="sub02.html">대표 제품</a></li>
+
+                        <li><a href="#">기능 안내</a></li>
+
+                        <li><a href="#">도입 사례</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>온라인문의</h3>
+
+                    <ul>
+
+                        <li><a href="sub03.html">문의 접수</a></li>
+
+                        <li><a href="#">견적 요청</a></li>
+
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>게시판</h3>
+
+                    <ul>
+
+                        <li><a href="sub04.html">공지사항</a></li>
+
+                        <li><a href="#">자료실</a></li>
+
+                        <li><a href="#">블로그</a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

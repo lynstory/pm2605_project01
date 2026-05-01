@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>온라인문의</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="top-header__inner">
+
+            <a class="logo" href="index.html">로고</a>
+
+            <nav aria-label="메인 메뉴">
+
+                <ul class="main-menu">
+
+                    <li><a href="sub01.html">회사소개</a></li>
+
+                    <li><a href="sub02.html">제품소개</a></li>
+
+                    <li><a href="sub03.html" aria-current="page">온라인문의</a></li>
+
+                    <li><a href="sub04.html">게시판</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="모바일 메뉴 열기">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+
+        <div class="drawer-header">
+
+            <button class="drawer-close-btn" id="drawerCloseBtn" type="button" aria-label="모바일 메뉴 닫기">&times;</button>
+
+        </div>
+
+        <nav aria-label="모바일 메뉴">
+
+            <ul class="drawer-menu">
+
+                <li><a href="sub01.html">회사소개</a></li>
+
+                <li><a href="sub02.html">제품소개</a></li>
+
+                <li><a href="sub03.html">온라인문의</a></li>
+
+                <li><a href="sub04.html">게시판</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+
+    <div class="subVisual" aria-label="서브 비주얼">
+
+        <div class="subVisual__inner">
+
+            <h1 class="subVisual__title">온라인문의</h1>
+
+            <div class="subVisual__path" aria-label="현재 위치">
+
+                <a href="index.html">홈</a>
+
+                <span aria-hidden="true">/</span>
+
+                <span>온라인문의</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <main class="main-content main-content--sub">
+
+        <div class="inquiry-wrap">
+
+            <aside class="inquiry-about" aria-label="회사 소개 요약">
+
+                <h2 class="inquiry-about__title">홈페이지코리아</h2>
+
+                <p class="inquiry-about__lead">교육·출판 현장의 요구에 맞춘 제품과 서비스를 제공합니다. 문의 주시면 담당자가 빠르게 안내드립니다.</p>
+
+                <dl class="inquiry-about__meta">
+
+                    <div>
+
+                        <dt>주소</dt>
+
+                        <dd>서울특별시 영등포구 경인로 775 에이스하이테크시티 2동 202호</dd>
+
+                    </div>
+
+                    <div>
+
+                        <dt>이메일</dt>
+
+                        <dd>sales@homepagekorea.com</dd>
+
+                    </div>
+
+                    <div>
+
+                        <dt>운영 시간</dt>
+
+                        <dd>평일 09:00 ~ 18:00 (주말·공휴일 휴무)</dd>
+
+                    </div>
+
+                </dl>
+
+                <a class="inquiry-about__link" href="sub01.html">회사소개 자세히 보기</a>
+
+            </aside>
+
+            <section class="inquiry-panel" aria-labelledby="inquiryHeading">
+
+                <div class="inquiry-intro">
+
+                    <h2 id="inquiryHeading">문의 남기기</h2>
+
+                    <p>제품 및 서비스에 관한 문의사항을 남겨 주시면 담당자가 확인 후 연락드리겠습니다. 빠른 회신을 위해 연락 가능한 번호 또는 이메일을 정확히 적어 주세요.</p>
+
+                </div>
+
+                <form class="inquiry-form" action="#" method="post">
+
+                    <div class="inquiry-form__field">
+
+                        <label for="inquiry-name"><span class="hint">*</span>이름</label>
+
+                        <input id="inquiry-name" name="name" type="text" autocomplete="name" required>
+
+                    </div>
+
+                    <div class="inquiry-form__field">
+
+                        <label for="inquiry-phone"><span class="hint">*</span>연락처</label>
+
+                        <input id="inquiry-phone" name="phone" type="tel" autocomplete="tel" required>
+
+                    </div>
+
+                    <div class="inquiry-form__field">
+
+                        <label for="inquiry-email"><span class="hint">*</span>이메일</label>
+
+                        <input id="inquiry-email" name="email" type="email" autocomplete="email" required>
+
+                    </div>
+
+                    <div class="inquiry-form__field">
+
+                        <label for="inquiry-subject"><span class="hint">*</span>제목</label>
+
+                        <input id="inquiry-subject" name="subject" type="text" required>
+
+                    </div>
+
+                    <div class="inquiry-form__field">
+
+                        <label for="inquiry-message"><span class="hint">*</span>문의 내용</label>
+
+                        <textarea id="inquiry-message" name="message" required></textarea>
+
+                    </div>
+
+                    <div class="inquiry-form__actions">
+
+                        <button type="submit" class="inquiry-submit">문의 보내기</button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <div class="site-footer__inner">
+
+            <section class="footer-company">
+
+                <a class="footer-logo" href="index.html">로고</a>
+
+                <p>홈페이지코리아</p>
+
+                <p>대표: 홍길동 | 사업자등록번호: 107-88-55192</p>
+
+                <p>주소: 서울특별시 영등포구 경인로 775 에이스하이테크시티 2동 202호</p>
+
+                <p>문의: sales@homepagekorea.com</p>
+
+                <p class="footer-copy">© 2026 HOMEPAGEKOREA. ALL RIGHTS RESERVED.</p>
+
+            </section>
+
+
+
+            <nav class="footer-nav" aria-label="푸터 메뉴">
+
+                <div class="footer-column">
+
+                    <h3>회사소개</h3>
+
+                    <ul>
+
+                        <li><a href="sub01.html">인사말</a></li>
+
+                        <li><a href="#">연혁</a></li>
+
+                        <li><a href="#">오시는 길</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>제품소개</h3>
+
+                    <ul>
+
+                        <li><a href="sub02.html">대표 제품</a></li>
+
+                        <li><a href="#">기능 안내</a></li>
+
+                        <li><a href="#">도입 사례</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>온라인문의</h3>
+
+                    <ul>
+
+                        <li><a href="sub03.html">문의 접수</a></li>
+
+                        <li><a href="#">견적 요청</a></li>
+
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>게시판</h3>
+
+                    <ul>
+
+                        <li><a href="sub04.html">공지사항</a></li>
+
+                        <li><a href="#">자료실</a></li>
+
+                        <li><a href="#">블로그</a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
