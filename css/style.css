@@ -429,6 +429,13 @@ body.drawer-open {
     object-fit: cover;
 }
 
+.vision-aurora-visual video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .vision-aurora-tagline {
     flex: 0 0 auto;
     margin: 0;
@@ -468,6 +475,12 @@ body.drawer-open {
 }
 
 .metrics-image-col img {
+    width: min(92%, 560px);
+    max-height: 82%;
+    object-fit: contain;
+}
+
+.metrics-image-col video {
     width: min(92%, 560px);
     max-height: 82%;
     object-fit: contain;
